@@ -13,9 +13,9 @@ import tile3 from './assets/tile3.webp';
 import tile4 from './assets/tile4.webp';
 
 export const App = () => {
-  const scroll = useCallback(() => {
+  const scroll = useCallback((id: string) => {
     setTimeout(() => {
-      const element = document.getElementById('desc');
+      const element = document.getElementById(id);
       element?.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 10);
   }, []);
@@ -30,8 +30,7 @@ export const App = () => {
         <Typography.TitleResponsive tag="h2" view="small" font="system">
           Готовые инвестиционные стратегии
         </Typography.TitleResponsive>
-        <Gap size={16} />
-
+        <Gap size={12} />
         <Typography.Text tag="p" view="primary-medium">
           Профессиональный автор стратегии подбирает бумаги, дает рекомендации по актуальному составу портфеля и присылает
           комментарии по событиям на рынке
@@ -84,7 +83,66 @@ export const App = () => {
             </Typography.Text>
           </Grid.Col>
         </Grid.Row>
-        <Button size="s" view="accent" onClick={scroll}>
+        <Button size="s" view="accent" onClick={() => scroll('desc')}>
+          Узнать больше
+        </Button>
+      </div>
+      <Gap size={16} />
+      <div className={appStyles.card}>
+        <Typography.TitleResponsive tag="h2" view="small" font="system">
+          Идеи от гуру
+        </Typography.TitleResponsive>
+        <Gap size={12} />
+
+        <Typography.Text tag="p" view="primary-medium">
+          Сервис торговых рекомендаций от экспертов Альфа-Банка
+        </Typography.Text>
+        <Gap size={16} />
+        <img src={card1Img} width={150} height={150} className={appStyles.img} />
+        <Gap size={16} />
+        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium" weight="bold">
+              от 10 000 ₽
+            </Typography.Text>
+          </Grid.Col>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium">
+              Сумма
+            </Typography.Text>
+          </Grid.Col>
+        </Grid.Row>
+        <Divider />
+        <Gap size={12} />
+
+        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium" weight="bold">
+              RUB
+            </Typography.Text>
+          </Grid.Col>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium">
+              Валюта
+            </Typography.Text>
+          </Grid.Col>
+        </Grid.Row>
+        <Divider />
+        <Gap size={12} />
+
+        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium" weight="bold">
+              От 3-х лет
+            </Typography.Text>
+          </Grid.Col>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium">
+              Срок
+            </Typography.Text>
+          </Grid.Col>
+        </Grid.Row>
+        <Button size="s" view="accent" onClick={() => scroll('guru')}>
           Узнать больше
         </Button>
       </div>
@@ -161,13 +219,20 @@ export const App = () => {
           событиям.
         </Typography.Text>
       </div>
+      <Gap size={16} />
+      <div style={{ padding: '0 .5rem' }}>
+        <Button href="alfabank://investments/open_brokerage_account" block size="s" view="accent">
+          Открыть брокерский счет
+        </Button>
+      </div>
+
       <Gap size={32} />
 
       <Typography.TitleResponsive tag="h2" view="small" style={{ textAlign: 'center' }}>
         Идеи от гуру
       </Typography.TitleResponsive>
       <Gap size={16} />
-      <div className={appStyles.card}>
+      <div id="guru" className={appStyles.card}>
         <img src={tile1} width={40} height={40} />
         <Gap size={12} />
 
