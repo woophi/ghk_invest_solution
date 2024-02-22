@@ -38,9 +38,20 @@ export const App = () => {
         <Gap size={16} />
         <img src={card1Img} width={150} height={150} className={appStyles.img} />
         <Gap size={16} />
-        <Typography.Text tag="p" view="primary-medium">
-          Управление портфелем : 1% от портфеля
-        </Typography.Text>
+        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium" weight="bold">
+              1% от портфеля
+            </Typography.Text>
+          </Grid.Col>
+          <Grid.Col width="6">
+            <Typography.Text tag="p" view="primary-medium">
+              Управление портфелем
+            </Typography.Text>
+          </Grid.Col>
+        </Grid.Row>
+        <Divider />
+        <Gap size={12} />
         <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
@@ -59,12 +70,12 @@ export const App = () => {
         <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
-              RUB
+              от 15%
             </Typography.Text>
           </Grid.Col>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium">
-              Валюта
+              Ожидаемая доходность
             </Typography.Text>
           </Grid.Col>
         </Grid.Row>
@@ -103,7 +114,7 @@ export const App = () => {
         <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
-              от 10 000 ₽
+              от 100 ₽
             </Typography.Text>
           </Grid.Col>
           <Grid.Col width="6">
@@ -118,12 +129,12 @@ export const App = () => {
         <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
-              RUB
+              14%
             </Typography.Text>
           </Grid.Col>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium">
-              Валюта
+              Средняя доходность
             </Typography.Text>
           </Grid.Col>
         </Grid.Row>
@@ -133,12 +144,12 @@ export const App = () => {
         <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
-              От 3-х лет
+              31 день
             </Typography.Text>
           </Grid.Col>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium">
-              Срок
+              Средний срок реализации
             </Typography.Text>
           </Grid.Col>
         </Grid.Row>
