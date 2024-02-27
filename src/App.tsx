@@ -4,6 +4,7 @@ import { Gap } from '@alfalab/core-components/gap';
 import { Grid } from '@alfalab/core-components/grid';
 import { Typography } from '@alfalab/core-components/typography';
 import { useCallback } from 'react';
+import { DynamicSection } from './DynamicSection';
 import { appStyles } from './app.css';
 import card1Img from './assets/card_1_img.png';
 import piechart from './assets/piechart.webp';
@@ -230,12 +231,10 @@ export const App = () => {
           событиям.
         </Typography.Text>
       </div>
-      <Gap size={16} />
-      <div style={{ padding: '0 .5rem' }}>
-        <Button href="alfabank://investments/open_brokerage_account" block size="s" view="accent">
-          Открыть брокерский счет
-        </Button>
-      </div>
+
+      <Gap size={32} />
+
+      <DynamicSection />
 
       <Gap size={32} />
 
