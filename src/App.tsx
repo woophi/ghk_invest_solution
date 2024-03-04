@@ -160,17 +160,17 @@ export const App = () => {
       </div>
 
       <Gap size={32} />
-      <Typography.TitleResponsive tag="h2" view="small" style={{ textAlign: 'center' }}>
+      <Typography.TitleResponsive tag="h2" font="system" view="small" style={{ textAlign: 'center' }}>
         Готовые торговые стратегии
       </Typography.TitleResponsive>
       <Gap size={16} />
       <div id="desc" className={appStyles.card}>
-        <Typography.TitleResponsive tag="h3" view="xlarge" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h3" view="xlarge" weight="bold">
           1
         </Typography.TitleResponsive>
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Определите свой инвестиционный профиль
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -182,12 +182,12 @@ export const App = () => {
       </div>
       <Gap size={16} />
       <div className={appStyles.card}>
-        <Typography.TitleResponsive tag="h3" view="xlarge" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h3" view="xlarge" weight="bold">
           2
         </Typography.TitleResponsive>
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Выберите подходящую стратегию
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -199,12 +199,12 @@ export const App = () => {
       </div>
       <Gap size={16} />
       <div className={appStyles.card}>
-        <Typography.TitleResponsive tag="h3" view="xlarge" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h3" view="xlarge" weight="bold">
           3
         </Typography.TitleResponsive>
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Подключитесь и пополните счет
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -216,12 +216,12 @@ export const App = () => {
       </div>
       <Gap size={16} />
       <div className={appStyles.card}>
-        <Typography.TitleResponsive tag="h3" view="xlarge" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h3" view="xlarge" weight="bold">
           4
         </Typography.TitleResponsive>
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Следуйте рекомендациям
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -238,7 +238,7 @@ export const App = () => {
 
       <Gap size={32} />
 
-      <Typography.TitleResponsive tag="h2" view="small" style={{ textAlign: 'center' }}>
+      <Typography.TitleResponsive font="system" tag="h2" view="small" style={{ textAlign: 'center' }}>
         Идеи от гуру
       </Typography.TitleResponsive>
       <Gap size={16} />
@@ -246,7 +246,7 @@ export const App = () => {
         <img src={tile1} width={40} height={40} />
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Исполнение в один клик
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -260,7 +260,7 @@ export const App = () => {
         <img src={tile2} width={40} height={40} />
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Объясняем почему
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -275,7 +275,7 @@ export const App = () => {
         <img src={tile3} width={40} height={40} />
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Готовый торговый план
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -289,7 +289,7 @@ export const App = () => {
         <img src={tile4} width={40} height={40} />
         <Gap size={12} />
 
-        <Typography.TitleResponsive tag="h4" view="small" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h4" view="small" weight="bold">
           Следим за каждой идеей
         </Typography.TitleResponsive>
         <Gap size={8} />
@@ -305,7 +305,7 @@ export const App = () => {
         </Button>
       </div>
       <Gap size={32} />
-      <Typography.TitleResponsive tag="h2" view="small" style={{ textAlign: 'center' }} weight="bold">
+      <Typography.TitleResponsive font="system" tag="h2" view="small" style={{ textAlign: 'center' }} weight="bold">
         Результаты стратегии
       </Typography.TitleResponsive>
       <Gap size={16} />
@@ -318,7 +318,7 @@ export const App = () => {
         <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
           Среднегодовая доходность стратегии
         </Typography.Text>
-        <Typography.TitleResponsive tag="h3" view="medium" weight="bold">
+        <Typography.TitleResponsive font="system" tag="h3" view="medium" weight="bold">
           14%
         </Typography.TitleResponsive>
       </div>
@@ -328,7 +328,7 @@ export const App = () => {
       <div className={appStyles.cardImg}>
         <img src={piechart} />
         <div className={appStyles.text}>
-          <Typography.TitleResponsive tag="h3" view="small" weight="bold">
+          <Typography.TitleResponsive font="system" tag="h3" view="small" weight="bold">
             70% идеи приносят прибыль
           </Typography.TitleResponsive>
           <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>

@@ -80,7 +80,7 @@ export const DynamicSection = () => {
         ))}
       </Swiper>
       <Gap size={16} />
-      <Typography.TitleResponsive tag="h3" view="small" weight="bold" style={{ padding: '0 .5rem' }}>
+      <Typography.TitleResponsive font="system" tag="h3" view="small" weight="bold" style={{ padding: '0 .5rem' }}>
         {checkedTag}
       </Typography.TitleResponsive>
       <Gap size={16} />

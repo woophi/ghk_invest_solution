@@ -9,9 +9,9 @@ import simg4 from './assets/simg_4.png';
 export const BigIntro = () => {
   return (
     <div style={{ padding: '0 .5rem' }}>
-      <Typography.Text tag="p" weight="bold" view="primary-medium">
+      <Typography.TitleResponsive font="system" tag="h1" view="medium" weight="bold">
         Стратегии инвестирования в акции и облигации: как получать 30% годовых с помощью 3% ежемесячных инвестиций
-      </Typography.Text>
+      </Typography.TitleResponsive>
       <Gap size={16} />
       <Typography.Text tag="p" view="primary-medium">
         Инвестирование является ключевым элементом финансового планирования и может значительно увеличить ваш капитал с
