@@ -40,10 +40,31 @@ const text = style({
   textAlign: 'center',
 });
 
+const smallImg = style({
+  width: '64px',
+  height: '64px',
+});
+const smallCard = style({
+  display: 'flex',
+  gap: '1rem',
+});
+
+const grid = style({
+  '@media': {
+    'screen and (max-width: 1024px)': {
+      marginLeft: 'calc(-8px / 2)',
+      marginRight: 'calc(-8px / 2)',
+    },
+  },
+});
+
 export const appStyles = {
   card,
   img,
   box,
   cardImg,
   text,
+  smallImg,
+  smallCard,
+  grid,
 };

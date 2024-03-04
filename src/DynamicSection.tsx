@@ -85,7 +85,7 @@ export const DynamicSection = () => {
       </Typography.TitleResponsive>
       <Gap size={16} />
       <div style={{ padding: '0 .5rem' }}>
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row gutter={{ mobile: 8, desktop: 12 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium">
               Ожидаемая доходность

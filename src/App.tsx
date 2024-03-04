@@ -4,9 +4,11 @@ import { Gap } from '@alfalab/core-components/gap';
 import { Grid } from '@alfalab/core-components/grid';
 import { Typography } from '@alfalab/core-components/typography';
 import { useCallback } from 'react';
+import { BigIntro } from './BigIntro';
 import { DynamicSection } from './DynamicSection';
 import { appStyles } from './app.css';
 import card1Img from './assets/card_1_img.png';
+import card2Img from './assets/card_2_img.png';
 import piechart from './assets/piechart.webp';
 import tile1 from './assets/tile1.webp';
 import tile2 from './assets/tile2.webp';
@@ -23,9 +25,7 @@ export const App = () => {
 
   return (
     <>
-      <Typography.TitleResponsive tag="h1" view="medium" font="system" style={{ padding: '1rem' }}>
-        Готовые инвестиционные решения
-      </Typography.TitleResponsive>
+      <BigIntro />
       <Gap size={16} />
       <div className={appStyles.card}>
         <Typography.TitleResponsive tag="h2" view="small" font="system">
@@ -39,7 +39,7 @@ export const App = () => {
         <Gap size={16} />
         <img src={card1Img} width={150} height={150} className={appStyles.img} />
         <Gap size={16} />
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               1% от портфеля
@@ -53,7 +53,7 @@ export const App = () => {
         </Grid.Row>
         <Divider />
         <Gap size={12} />
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               от 10 000 ₽
@@ -68,7 +68,7 @@ export const App = () => {
         <Divider />
         <Gap size={12} />
 
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               от 15%
@@ -83,7 +83,7 @@ export const App = () => {
         <Divider />
         <Gap size={12} />
 
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               От 3-х лет
@@ -110,9 +110,9 @@ export const App = () => {
           Сервис торговых рекомендаций от экспертов Альфа-Банка
         </Typography.Text>
         <Gap size={16} />
-        <img src={card1Img} width={150} height={150} className={appStyles.img} />
+        <img src={card2Img} width={150} height={150} className={appStyles.img} />
         <Gap size={16} />
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               от 100 ₽
@@ -127,7 +127,7 @@ export const App = () => {
         <Divider />
         <Gap size={12} />
 
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               14%
@@ -142,7 +142,7 @@ export const App = () => {
         <Divider />
         <Gap size={12} />
 
-        <Grid.Row gutter={{ mobile: 8, desktop: 16 }}>
+        <Grid.Row className={appStyles.grid} gutter={{ mobile: 8, desktop: 16 }}>
           <Grid.Col width="6">
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               31 день
